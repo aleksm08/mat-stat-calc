@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Мой сайт{% endblock %}</title>
+    {% block styles %}
+    <!-- Добавление CSS стилей -->
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        .errorlist {
+            color: red;
+        }
+    </style>
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <!-- Навигация или другие элементы шапки -->
+        <h1>Калькулятор по мат. статистике</h1>
+    </header>
+    <main>
+        {% block content %}
+        <!-- Содержимое страницы -->
+        {% endblock %}
+    </main>
+    <footer>
+        <!-- Информация о сайте -->
+    </footer>
+    {% block scripts %}
+    <!-- Добавление JavaScript скриптов -->
+    {% endblock %}
+</body>
+</html>
